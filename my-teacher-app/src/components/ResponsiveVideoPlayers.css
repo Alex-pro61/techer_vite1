@@ -1,0 +1,37 @@
+.responsive-video-players {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .video-container {
+    flex: 1 1 48%;
+    margin: 1%;
+    max-width: 600px; /* Обмеження розміру вікон плеєрів на великих екранах */
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-video-players {
+      flex-direction: column;
+    }
+  
+    .video-container {
+      flex: 1 1 100%;
+      margin: 0;
+    }
+  }
+  
+  @media (orientation: landscape) and (max-width: 768px) {
+    .responsive-video-players {
+      flex-direction: row;
+    }
+  
+    .video-container {
+      flex: 1 1 48%;
+      margin: 1%;
+    }
+  }
+  
+  
+  
+  
